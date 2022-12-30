@@ -44,7 +44,7 @@ public class ClienteController {
   @ResponseStatus(HttpStatus.OK)
   public Cliente buscarPorId(@PathVariable("id") Long id) {
     return clienteService.buscarPorId(id)
-        .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encntrado."));
+        .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado."));
   }
 
   @DeleteMapping("/{id}")
@@ -54,7 +54,7 @@ public class ClienteController {
         .map(cliente -> {
           clienteService.removerPorId(cliente.getId());
           return Void.TYPE;
-        }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encntrado."));
+        }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado."));
   }
 
   @PutMapping("/{id}")
@@ -65,7 +65,7 @@ public class ClienteController {
           modelMapper.map(cliente, clienteBase);
           clienteService.salvar(clienteBase);
           return Void.TYPE;
-        }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encntrado."));
+        }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado."));
   }
 
 }
