@@ -22,7 +22,7 @@
    + Java 11;
    + Model Mapper;
    + Lombok
-    + Thunder Client;
+   + Thunder Client;
    + Rodar Aplicação comando mvn spring-boot:run
 
   </div>
