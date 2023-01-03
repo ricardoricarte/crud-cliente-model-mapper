@@ -13,11 +13,11 @@
   <br>
   <p>Usar o model maper para atualizar o cliente da base.
 
-  o que o mapper faz é pegar todas as informaçoes de cliente nome, email e cpf e adicioana o cliente base.
+  O que o Mapper faz é pegar todas as informaçoes de cliente nome, email e cpf e adicioana o cliente na base.
   E caso não seja enviado nenhum dos atributos nome, email e cpf.
-  O map vai adicionar nulo.
+  O Map vai adicionar nulo.
 
-  Entao criei um bean do modelmapper na classe principal para qando usar o model mapper ele não considere os valores nulos.
+  Entao criei um Bean do Modelmapper na classe principal para quando usar o ModelMapper ele não considere os valores nulos.
   E desta forma toda vez que a aplicação for executada a configuração na classe principal seja aplicada.
   Então os atributos não informados não serão atualizados no cliente da base de dados.</p>
   <br>
