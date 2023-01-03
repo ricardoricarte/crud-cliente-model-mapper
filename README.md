@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://images.ctfassets.net/23aumh6u8s0i/4JFn93iA5DZgomgcIPJOPx/700a59ae9668acf22df959dcf45b409a/spring" width="50%">
+  <img src="https://uoledtech.com.br/hubfs/Imported_Blog_Media/20943526-scaled-1.jpg" width="50%">
   <h1 style="border-bottom:none">Crud de Cliente usando Model Mapper</h1>
   <p>Author: José Ricardo</p>
   
